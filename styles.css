@@ -1,0 +1,134 @@
+html, body {
+    font-family: Arial, sans-serif;
+}
+
+@media (min-width: 499px) {
+    img, .img-wrapper {
+        width: 20vw;
+    }
+
+    .input-wrapper {
+        width: 40vw;
+    }
+
+    .bottom-right {
+        bottom:0;
+        right:.9vw;
+        font-size: 1vw;
+    }
+}
+
+@media (max-width: 500px) {
+    img, .img-wrapper {
+        width: 45vw;
+        height: auto;
+    }
+
+    .input-wrapper {
+        width: 90vw;
+        height: auto;
+    }
+
+    .bottom-right {
+        bottom:0;
+        right:8px;
+        font-size: 2vw;
+    }
+}
+
+.img-wrapper {
+    position: relative;
+}
+
+.bottom-right {
+    position: absolute;
+    color: #4285F4;
+}
+
+.input-wrapper {
+    height: 45px; 
+    border-radius: 45px;
+    transition: none;  
+    position: relative; 
+}
+
+.input-wrapper:focus-within, .input-wrapper:hover {
+    box-shadow: 0 .1rem .4rem rgba(0,0,0,.25);
+    border: none;
+}
+
+.mt-c {
+    margin-top: 6px;
+}
+
+.input {
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-top: 2px;
+}
+
+.muted {
+    color: #caccce;
+}
+
+.btn-1 {
+    font-size: 14px;
+    color:#5F6368;
+    background-color: #f2f2f2;
+    transition: none;
+}
+
+.btn-1:hover {
+    border: 1px solid rgb(165, 165, 165);
+}
+
+.btn-2 {
+    color: #4285F4;
+    border: none;
+}
+
+.btn-2:hover, .btn-2:focus, .btn-2:active {
+    color: #4285F4;
+    box-shadow: none;
+    outline: none;
+    border: none !important;
+}
+
+
+
+.btn-3 {
+    font-size: 14px;
+    color:#ffffff;
+    background-color: #4D90FE;
+    transition: none;
+}
+
+.btn-1:focus, .btn-1:active, .btn-2:focus, .btn-2:active, .btn-3:focus, .btn-3:active {
+    box-shadow: none;
+    border: 1px solid rgb(13, 78, 228);
+}
+
+
+.btn-3:hover, .btn-3:focus, .btn-3:active {
+    box-shadow: none;
+    border: 1px solid rgb(13, 78, 228);
+    color: #ffffff;
+}
+
+
+a img {
+    max-width: 100px;
+    height: auto;
+}
+
+.adv-input {
+    height: 25px;
+    font-size: small;
+    border: 1px solid #5F6368;
+    outline: none;
+}
+
+.adv-input:active, .adv-input:focus {
+    border: 1px solid #4D90FE;
+}
